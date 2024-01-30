@@ -66,10 +66,17 @@ fun Myscreen() {
         ) {
             Column {
                 Myrow1()
+
                 Image(painter = painterResource(id = R.drawable.android_logo),
                     contentDescription ="android logo" )
 
-            }
+                Spacer(modifier = Modifier.padding(16.dp))
+                Text(
+                    text="Attending Android Camp\n2024",
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(bottom = 16.dp))
+                                }
 
         }
     }
